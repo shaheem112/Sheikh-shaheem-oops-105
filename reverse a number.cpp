@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main() {
-    int n, sum=0;
+    int n, rev=0;
     printf("Enter a number: ");
     scanf("%d",&n);
     int temp=n;
     while(temp!=0){
-        sum += temp%10;
+        rev = rev*10 + temp%10;
         temp/=10;
     }
-    printf("Sum of digits = %d\n", sum);
+    printf("Reversed = %d\n", rev);
     return 0;
 }
 
